@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [datadriventesting]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.fm.listeners.CustomListeners"/>
+  </listeners>
+  <test name="Add Customer Test(failed)">
+    <parameter name="" value=""/>
+    <classes>
+      <class name="com.fm.testcases.LoginFunctionality">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testCustomerLogin"/>
+        </methods>
+      </class> <!-- com.fm.testcases.LoginFunctionality -->
+    </classes>
+  </test> <!-- Add Customer Test(failed) -->
+</suite> <!-- Failed suite [datadriventesting] -->

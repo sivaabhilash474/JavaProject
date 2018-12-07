@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="datadriventesting">
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+<listener class-name="com.fm.listeners.CustomListeners"></listener>
+  
+    
+</listeners>
+ 
+  <test thread-count="5" name="Add Customer Test" group-by-instances="true">
+  <parameter name="" value=""></parameter>
+    <classes>
+      <class name="com.fm.testcases.LoginFunctionality"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
