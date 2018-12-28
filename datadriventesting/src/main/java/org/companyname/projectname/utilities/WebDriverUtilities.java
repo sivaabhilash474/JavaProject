@@ -11,8 +11,8 @@ public class WebDriverUtilities {
 		
 		String logFilePath = "C:\\Users\\sivaa\\git\\JavaProject\\datadriventesting\\src\\test\\resources\\browserLogs\\log.txt";
 		
-		System.setProperty("webdriver.gecko.driver","c:\\selenium"
-				+ "\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver","c:\\selenium\\geckodriver.exe");
+		System.setProperty("webdriver.firefox.marionette","c:\\selenium\\geckodriver.exe" );
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, logFilePath);
 		
 		
